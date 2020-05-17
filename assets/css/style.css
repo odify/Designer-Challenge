@@ -1,81 +1,175 @@
-body{
-    margin-top: 0;
-    font-family: 'Roboto', sans-serif;
-    height: 100%;
-
-
+*{
+    margin: 0;
+    padding: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+    font-family: 'Roboto', sans-serif
+}
 header{
-
     background-image: url(../img/ilustracion1.png);
     background-repeat: no-repeat;
     height: 100vh;
     background-position: top right;
     background-size: contain;
-    margin-bottom: 10%; 
+    padding-top: 1%;
+    padding-left: 0.75%;
 }
 .logo1{
-    
-    width: 50px;
-    height: 50px; 
-    margin-left: 5px;
-    /* margin-top: 2%; */
     display: flex;
-}
-
-.logo2{
-
     flex-direction: row;
-    
-    
+    align-self: center;
+    margin-top: 0.1%;
+    margin-left: -3.5%;
+    position: fixed;
+    width: 12.5%;
+    height: 12.5%;
 }
-
+.logo2{
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.logo2>h4{
+    font-weight: 500;
+    font-size: 0.57em;
+}
 .section1{
-
-
     color: #0b0c17;
     font-family: 'Roboto', sans-serif;
-    
-    
-
 }
-
 .first{
-
-    
     width: 400px;
     margin-left: 15%;
     text-align: left;
 }
-
-
 .first h1{
-
     font-size: 3em;
 }
 .first a{
-
     text-decoration: none;
     color: #ff3571;
 }
-
 .first img{
-
     height: 25px;
     width: 25px;
 }
-
 .section2{
-
     margin-top: 20%;
 }
-
 .section2 img{
-
     width: 90vw;
     margin: 2%;
 }
+.section3{
+margin-left: 5%; 
+}
+.idea {   
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.idea h1 {
+    font-size: 3em;
+    width: 30vw;
+    justify-content: flex-start;
+}
+.idea p {
+    justify-content: flex-end;
+    width: 30vw;
+    margin-top: 5%;
+}
+.idea img{
+    height: 30px;
+    width: 30px;
+}
+.asw{
+    margin-top: 10%;
+    margin-left: 7%;
+    text-align: left;
+    font-size: 2em;  
+}
+.section4 {
+    height: 100vh;
+}
+.section4 article {
+        display: flex;
+        justify-content: space-around;
+        margin: 8%;
+}
+.section4 div {
+    width: 45%;
+}
+.section4 h2 {
+    font-size: 2em;
+    padding-bottom: 3%;
+}
+.section4 p {
+    font-size: 1.3em;
+    padding-bottom: 5%;
+    padding-left: 10%;
+}
+.section4 img {
+    margin-right: 2%;
+}
+.section5{
+    margin-top: 10%;
+    text-align: center;
+    
+}
+.section5 h1{
+    margin-top: 7%;
+    font-size: 2.22em;
+}
+.svg {
+  height: 25px;
+  width: 25px;
+}
+.pics{
+height: 400px;
+width: 400px;
+}
+.counter{
+    color: rgba(0, 0, 0, 0.24);
+}
+.footer{
+    height: 100vh;
+    text-align: center;
+}
+.footer div h2 {
+    font-size: 4em;
+    padding-bottom: 10%;
+}
+.footer div p {
+    font-size: 1.5em;
+    padding-bottom: 5%;
+}
+.footer div [type="text"] {
+    padding: 2% 20%;
+    font-size: 1em;
+    color: gray;
+    border-radius: 8px;
+    box-shadow: 0 0 8px black;
+}
+.footer div button {
+    padding: 2% 8% ;
+    border-radius: 6px;
+    margin-bottom: 5%;
+    box-shadow: 1px 1px 2px black;
+}
+.footer h5 {
+    margin: 5%;
+    font-size: 1.1em;
+}
+
+
+
+
 
 
 @media screen and (max-width:992px){
@@ -101,198 +195,5 @@ header{
         width: 100vw;
         margin: 2%;
     }
-}
-
-.section3{
-
-margin-left: 5%;
-
-    
-}
-
-.idea {
-
-    
-    width: 60vw;
-    display: flex;
-    flex-direction: row;
-    margin-left: 10%;
-    margin-top: 10%;
 
 }
-.idea h1 {
-
-    font-size: 3em;
-    width: 30vw;
-    justify-content: flex-start;
-   
-
-}
-
-
-.idea p {
-    
-    justify-content: flex-end;
-    width: 30vw;
-    margin-top: 5%;
-}
-.idea img{
-
-    height: 30px;
-    width: 30px;
-}
-
-
-.asw{
-    margin-top: 10%;
-    margin-left: 7%;
-    text-align: left;
-    font-size: 2em;
-    
-    
-}
-
-
-.section4 {
-    height: 90vh;
-}
-.section4 article {
-        display: flex;
-        justify-content: space-around;
-        margin: 8%;
-}
-.section4 div {
-    width: 45%;
-}
-.section4 h2 {
-    font-size: 2em;
-    padding-bottom: 3%;
-
-}
-.section4 p {
-    font-size: 1.3em;
-    padding-bottom: 5%;
-    padding-left: 10%;
-}
-.section4 img {
-    margin-right: 2%;
-}
-.section5{
-    margin-top: 10%;
-    text-align: center;
-}
-.section5 h1{
-
-    font-size: 2em;
-}
-.svg {
-
-  height: 25px;
-  width: 25px;
-
-}
-.pics{
-
-height: 400px;
-width: 400px;
-
-}
-
-
-.div01 {
-
-
-}
-
-
-.div02 {
-
-
-}
-
-
-.div03 {
-
-
-}
-
-
-
-.div04 {
-
-
-}
-
-.counter{
-
-
-    color: rgba(0, 0, 0, 0.24);
-}
-
-
-.footer{
-
-    height: 100vh;
-    text-align: center;
-}
-
-
-
-
-
-
-.footer div h2 {
-
-
-   
-    font-size: 4em;
-    padding-bottom: 10%;
-}
-
-
-
-
-
-
-.footer div p {
-
-
-    font-size: 1.5em;
-    padding-bottom: 5%;
-}
-
-
-
-
-
-.footer div [type="text"] {
-
-
-
-
-    padding: 2% 20%;
-    font-size: 1.5em;
-    color: gray;
-    border-radius: 8px;
-    box-shadow: 0 0 8px black;
-}
-.footer div button {
-
-
-    padding: 2% 8% ;
-
-    border-radius: 6px;
-    margin-bottom: 5%;
-}
-
-.footer h5 {
-
-    margin: 5%;
-    font-size: 1.1em;
-}
-
-
-
-/* Leider bin ich auch absolut nicht mit meiner Arbeit zufrieden, aber die Tatsache, dass wir für
-    diese Aufgabe lediglich 12h Zeit hatten (im Vergleich zum Roma-Projekt ....) hat mich leider auch
-    zusätzlich unter Druck gesetzt... m.f.G.-Ferdi */
